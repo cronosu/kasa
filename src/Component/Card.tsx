@@ -2,16 +2,13 @@
 import './Card.scss'
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import  logements  from '../../logements.json';
+import  logements  from '../../public/logements.json';
 function Card() {
   const [donnees, setDonnees] = useState<any[]>([]);
 
   useEffect(() => {
     setDonnees(logements);
-
   }, []);
-
-
 
 
   return (
