@@ -2,22 +2,13 @@
 import './Card.scss'
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-
+import  logements  from '../../logements.json';
 function Card() {
   const [donnees, setDonnees] = useState<any[]>([]);
 
   useEffect(() => {
+    setDonnees(logements);
 
-    fetch('../../logements.json')
-      .then(response => response.json())
-      .then(data => {
-        setDonnees(data);
-
-
-      })
-      .catch(error => {
-        console.error('Erreur lors de la requête :', error);
-      });
   }, []);
 
 
