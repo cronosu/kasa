@@ -11,7 +11,7 @@ import Header from './Component/Header'
 import Banner from './Component/Banner'
 import Card from './Component/Card'
 import Footer from './Component/Footer'
-import PageID from './Component/Page-ID'
+import PageID from './Component/Page-id'
 
 import './index.scss'
 
