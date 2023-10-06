@@ -1,4 +1,13 @@
 .container-card {
+    @media (max-width: 1250px) {
+        justify-content: center;
+        gap: 50px 70px;
+    }
+    @media (max-width: 1190px) {
+        background-color: #ffffff00;
+    }
+    background-color: #F6F6F6;
+    border-radius: 25px;
     user-select: none;
     display: flex;
     flex-wrap: wrap;
@@ -8,13 +17,20 @@
     padding: 50px;
 
     .cards {
+        @media (max-width: 1250px) {
+            width: 500px;
+        }
+
+        @media (max-width: 1190px) {
+            width: 100%;
+        }
+
         position: relative;
-       
-        min-width: 340px;
+        width: 340px;
         height: 340px;
-        object-fit: cover;
         border-radius: 10px;
-        transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in,
+        transform 0.2s ease-in;
         overflow: hidden;
 
         &:hover img.card {
@@ -37,8 +53,8 @@
 
         .card {
             position: relative;
-            width: 340px;
-            height: 340px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             border-radius: 10px;
             transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
@@ -51,7 +67,10 @@
             margin-right: 10px;
             bottom: 0;
             color: white;
-
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;            
         }
 
         &:hover {

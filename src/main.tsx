@@ -34,6 +34,11 @@ const router = createBrowserRouter(
           <Footer />
         </>
       } />
+      <Route path="*" element={
+        <>        
+          <Footer />
+        </>
+      } />
     </>
   )
 );
