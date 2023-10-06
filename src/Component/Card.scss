@@ -2,16 +2,14 @@
     user-select: none;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     margin-top: 50px;
     gap: 50px;
     justify-content: start;
     padding: 50px;
 
-
     .cards {
         position: relative;
-        width: 30%;
+       
         min-width: 340px;
         height: 340px;
         object-fit: cover;
@@ -53,13 +51,7 @@
             margin-right: 10px;
             bottom: 0;
             color: white;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 26px;
-     
-        
-            
+
         }
 
         &:hover {
