@@ -25,7 +25,7 @@ function PageID() {
   return (
     <div>
       {elementTrouve ? (
-    <Link className='nav-link-btn' to="/">>OK</Link> 
+    <Link className='nav-link-btn' to="/">OK</Link> 
       ) : (
         <p>pas ok</p>
       )}
