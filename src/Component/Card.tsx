@@ -8,7 +8,7 @@ function Card() {
 
   useEffect(() => {
 
-    fetch('../logements.json')
+    fetch('../../logements.json')
       .then(response => response.json())
       .then(data => {
         setDonnees(data);
