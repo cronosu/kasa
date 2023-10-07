@@ -20,28 +20,34 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={
-        <>
-          <Header />
-          <Banner />
-          <Card />
+        <section className="container">
+          <main>
+            <Header />
+            <Banner />
+            <Card />
+          </main>
           <Footer />
-        </>
+        </section>
       } />
       <Route path="/:id" element={
-        <>
-          <Header />
-          <PageID />
+        <section className="container">
+          <main>
+            <Header />
+            <PageID />
+          </main>
           <Footer />
-        </>
+        </section>
       } />
       <Route path="*" element={
-        <>
-          <Header />
-          <Error404 />
+        <section className="container">
+          <main>
+            <Header />
+            <Error404 />
+          </main>
           <Footer />
-        </>
+        </section>
       } />
-      
+
     </>
   )
 );
@@ -51,8 +57,7 @@ const root = ReactDOM.createRoot(rootElement!);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-
   </React.StrictMode>
-  
+
   ,
 )
