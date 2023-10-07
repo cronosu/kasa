@@ -5,7 +5,8 @@
     height: 415px;
     width: 1240px;
     caret-color: transparent;
-
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 .carouselle-img {
@@ -14,9 +15,17 @@
     object-fit: cover;
     width: 1240px;
     transition: opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-out;
+    &:hover .banner-content {
+        transform: scale(1);
+      }
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .fleche {
+    z-index: 5;
     position: absolute;
     top: 40%;
     transition: transform 0.1s ease-in;

@@ -1,6 +1,6 @@
 
 import './LogementID.scss'
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import logements from '../../public/logements.json';
 import { useLocation } from 'react-router-dom';
 
