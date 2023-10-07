@@ -20,32 +20,32 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={
-        <section className="container">
+        <>
           <main>
             <Header />
             <Banner />
             <Card />
           </main>
           <Footer />
-        </section>
+        </>
       } />
       <Route path="/:id" element={
-        <section className="container">
+        <>
           <main>
             <Header />
             <PageID />
           </main>
           <Footer />
-        </section>
+        </>
       } />
       <Route path="*" element={
-        <section className="container">
+        <>
           <main>
             <Header />
             <Error404 />
           </main>
           <Footer />
-        </section>
+        </>
       } />
 
     </>

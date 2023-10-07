@@ -56,6 +56,7 @@ function LogementID() {
             : null
         }
       </div>
+      
       <h1>{donnees[indexOfLogement].title}</h1>
       <ul>
         {donnees[indexOfLogement].tags.map((e, index) => (
