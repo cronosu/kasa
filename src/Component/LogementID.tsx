@@ -3,6 +3,7 @@ import './LogementID.scss'
 import { useEffect, useState } from 'react';
 import logements from '../../public/logements.json';
 import { useLocation } from 'react-router-dom';
+import fleche from "/src/assets/Vector.png";
 
 function LogementID() {
   const [donnees, setDonnees] = useState(logements);
@@ -41,7 +42,7 @@ function LogementID() {
   return (
     <>
       <div className="carrouselle">{
-        donnees[indexOfLogement].pictures.length > 1 ? <img onClick={previous} className='fleche fleche-gauche' src="../src/assets/Vector.png"></img>
+        donnees[indexOfLogement].pictures.length > 1 ? <img onClick={previous} className='fleche fleche-gauche' src={fleche} ></img>
           : null
       }
         <img className="carouselle-img" src={donnees[indexOfLogement].pictures[indexCarouselle]}></img>
@@ -51,7 +52,7 @@ function LogementID() {
         }
         
         {
-          donnees[indexOfLogement].pictures.length > 1 ? <img onClick={next} className='fleche fleche-droite' src="../src/assets/Vector.png" ></img>
+          donnees[indexOfLogement].pictures.length > 1 ? <img onClick={next} className='fleche fleche-droite' src={fleche} ></img>
             : null
         }
       </div>
