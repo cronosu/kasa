@@ -5,7 +5,6 @@
     width: 122px;
     filter: brightness(100);
   }
-
   position: absolute;
   display: flex;
   align-items: center;
@@ -21,6 +20,7 @@
   gap: 10px;
   font-size: 24px;
   left: 0;
+  bottom: -259px;
   width: 100%;
   @media (max-width: 880px) {
     height: 375px;}
