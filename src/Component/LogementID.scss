@@ -1,0 +1,44 @@
+.carrouselle {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    height: 415px;
+    width: 1240px;
+    caret-color: transparent;
+
+}
+
+.carouselle-img {
+    border-radius: 25px;
+    user-select: none;
+    object-fit: cover;
+    width: 1240px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fleche {
+    position: absolute;
+    top: 40%;
+    transition: transform 0.1s ease-in;
+&:hover{
+
+    transform: scale(1.3);
+}
+}
+
+.fleche-gauche {
+    margin-left: 20px;
+}
+
+.fleche-droite {
+    right: 20px;
+    rotate: 180deg;
+}
+.compteur{
+position: absolute;
+bottom:10px ;
+color: white;
+left: 50%;
+transform: translate(-50%);
+font-size: 20px;
+}

@@ -1,0 +1,32 @@
+.container-error {
+    font-family: Montserrat;
+    color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .titre-error {
+        user-select: none;
+        margin: 0 ;
+        margin-top: 50px;
+        font-size: 170px;
+        font-size: 288px;
+        @media (max-width: 730px) {
+            font-size: 120px;
+        }
+    }
+
+    .p-error {
+        font-size: 36px;
+        text-align: center;
+        user-select: none;
+    }
+
+    .titre-error-btn {
+        user-select: none;
+        margin: 50px 0;
+        color: #FF6060;
+        text-decoration: underline;
+    }
+}

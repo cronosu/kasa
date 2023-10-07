@@ -11,6 +11,7 @@ function Footer() {
          <img className="logo" src={Logo} alt="Logo" />
          <p>© 2020 Kasa. All rights reserved</p>
     </footer>
+ 
   )
 }
 

@@ -1,8 +1,8 @@
 import './Page-id.scss'
 import { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-
+import LogementID from "./LogementID.tsx"
+import Error404 from './Error404.tsx';
 
 function PageID() {
   const [donnees, setDonnees] = useState<any[]>([]);
@@ -24,10 +24,12 @@ function PageID() {
 
   return (
     <div>
-      {elementTrouve ? (
-    <Link className='nav-link-btn' to="/">OK</Link> 
-      ) : (
-        <p>pas ok</p>
+      {elementTrouve ? (<>
+        <LogementID />
+      </>
+      ) : (<>
+        <Error404 />
+      </>
       )}
     </div>
   );

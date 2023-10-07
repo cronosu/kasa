@@ -12,6 +12,7 @@ import Banner from './Component/Banner'
 import Card from './Component/Card'
 import Footer from './Component/Footer'
 import PageID from './Component/Page-id'
+import Error404 from './Component/Error404'
 
 import './index.scss'
 
@@ -30,23 +31,28 @@ const router = createBrowserRouter(
         <>
           <Header />
           <PageID />
-        
           <Footer />
         </>
       } />
       <Route path="*" element={
-        <>        
+        <>
+          <Header />
+          <Error404 />
           <Footer />
         </>
       } />
+      
     </>
   )
 );
-; 
+;
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement!);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+
+  </React.StrictMode>
+  
+  ,
 )

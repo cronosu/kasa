@@ -1,12 +1,17 @@
 .nav {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    @media (max-width: 1260px) {
+      margin: 0 25px;
+  }
     .nav-link {
       display: flex;
       gap: 57px;
-
+      @media (max-width: 1260px) {
+        gap: 30px;
+    }
       .nav-link-btn {
         text-decoration: none;
         color: #FF6060;
@@ -22,6 +27,7 @@
     }
   }
 
-
-
+.logo{
+  caret-color: transparent;
+}
 
