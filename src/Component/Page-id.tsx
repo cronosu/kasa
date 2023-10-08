@@ -11,8 +11,7 @@ function PageID() {
 
  
   useEffect(() => {
-    setDonnees(logements);
-    console.log(donnees);   
+    setDonnees(logements); 
   }, []);   
   
   const elementTrouve = donnees.find(e => "/" + e.id === location.pathname);

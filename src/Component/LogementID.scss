@@ -7,36 +7,46 @@
     caret-color: transparent;
     overflow: hidden;
     border-radius: 25px;
-    
-    &:hover + .carouselle-img {
-        transform: scale(1.3);      
+
+    &:hover+.carouselle-img {
+        transform: scale(1.3);
     }
-}
 
-.carouselle-img {
-    border-radius: 25px;
-    user-select: none;
-    object-fit: cover;
-    width: 1240px;
-}
+    .carouselle-img {
+        border-radius: 25px;
+        user-select: none;
+        object-fit: cover;
+        width: 1240px;
+    }
 
-.fleche {
-    z-index: 5;
-    position: absolute;
-    top: 40%;
-    transition: transform 0.1s ease-in;
-    cursor: pointer;
- 
-   
-}
+    .fleche {
+        z-index: 5;
+        position: absolute;
+        top: 40%;
+        transition: transform 0.2s ease-in;
+        cursor: pointer;
 
-.fleche-gauche {
-    margin-left: 20px;
-}
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
 
-.fleche-droite {
-    right: 20px;
-    rotate: 180deg;
+    .fleche-gauche {
+        margin-left: 20px;
+    }
+
+    .fleche-droite {
+        top: 35%;
+        right: 20px;
+        rotate: 180deg;
+    }
+
+    .carouselle-img {
+        border-radius: 25px;
+        user-select: none;
+        object-fit: cover;
+        width: 1240px;
+    }
 }
 
 .compteur {
@@ -48,3 +58,145 @@
     font-size: 20px;
 }
 
+.list-tag {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+
+    .tag {
+        list-style: none;
+        color: white;
+        background-color: #FF6060;
+        min-width: 115px;
+        padding: 1px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+
+    }
+}
+
+.logement-title {
+    color: #FF6060;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+
+
+
+
+}
+
+.logement-location {
+    margin-top: 5px;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.container-descrition-equipements {
+
+    color: white;
+    display: flex;
+    gap: 76px;
+    margin: 10px 0;
+    margin-top: 20px;
+    justify-content: space-around;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 26px;
+
+
+    .descrition {
+        position: relative;
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-color: #FF6060;
+
+        width: 100%
+    }
+
+    .equipements {
+        position: relative;
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-color: #FF6060;
+        width: 100%
+    }
+
+
+}
+
+.fleche-up {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+}
+
+.container-info {
+    position: relative;
+    align-items: center;
+}
+
+.container-host-rating {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container-host {
+
+    display: flex;
+
+    justify-content: end;
+    gap: 5px;
+    user-select: none;
+    .host-name {
+        width: 50%;
+        display: flex;
+        color: #FF6060;
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: right;
+        align-self: center;
+        user-select:text;
+    }
+
+    .host-img {
+        margin: 0;
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+    }
+}
+
+.rating div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.etoile {
+    height: 20px;
+}
+
+.etoileInative {
+    filter:contrast(0);
+    opacity: 0.3;
+
+}
