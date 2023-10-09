@@ -1,9 +1,10 @@
 
 import './Banner.scss'
-import fond from '../assets/fond2.png'
+import fond2 from '../assets/fond2.png'
+import fond1 from '../assets/fond1.png'
 type CardComponentProps = {
   backgroundImage?: string;
-  content?: string;
+  content?: "fond1"
 };
 
 
@@ -14,8 +15,8 @@ function Banner(props: CardComponentProps) {
       <div
         style={
           props.backgroundImage
-            ? { backgroundImage: `url(${props.backgroundImage})` }
-            : { backgroundImage: `url(${fond})` }
+            ? { backgroundImage: `url(${fond1})` }
+            : { backgroundImage: `url(${fond2})` }
         } className='banner'>
 
         {props.content

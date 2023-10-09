@@ -63,7 +63,7 @@ const router = createBrowserRouter(
           <main>
             <Header />
             <Banner
-              backgroundImage="/src/assets/fond1.png"
+              backgroundImage="fond1"
             />
             <div className='container-cardComponent'>
               <CardComponent
