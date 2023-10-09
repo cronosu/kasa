@@ -13,6 +13,7 @@ import Card from './Component/Card'
 import Footer from './Component/Footer'
 import PageID from './Component/Page-id'
 import Error404 from './Component/Error404'
+import CardComponent from './Component/CardComponent'
 import './index.scss'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -37,7 +38,10 @@ const router = createBrowserRouter(
           <ScrollToTop />
           <main>
             <Header />
-            <Banner />
+            <Banner
+              content="Chez vous, partout et ailleurs"
+            />
+
             <Card />
           </main>
           <Footer />
@@ -49,6 +53,38 @@ const router = createBrowserRouter(
           <main>
             <Header />
             <PageID />
+          </main>
+          <Footer />
+        </>
+      } />
+      <Route path="/apropos" element={
+        <>
+          <ScrollToTop />
+          <main>
+            <Header />
+            <Banner
+              backgroundImage="/src/assets/fond1.png"
+            />
+            <div className='container-cardComponent'>
+              <CardComponent
+                titre="Fiabilité"
+                content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
+                régulièrement vérifiées par nos équipes." />
+              <CardComponent
+                titre="Respect"
+                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
+                perturbation du voisinage entraînera une exclusion de notre plateforme." />
+              <CardComponent
+                titre="Service"
+                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
+                perturbation du voisinage entraînera une exclusion de notre plateforme." />
+              <CardComponent
+                titre="Sécurité"
+                content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement
+                correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au
+                locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons
+                également des ateliers sur la sécurité domestique pour nos hôtes." />
+            </div>
           </main>
           <Footer />
         </>

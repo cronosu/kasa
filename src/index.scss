@@ -4,7 +4,7 @@ body {
   height: 100%;
   position: relative;
   min-height: 100vh;
- }
+}
 
 
 
@@ -17,7 +17,10 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  gap: 50px;
 }
 
 #root {
@@ -25,4 +28,12 @@ main {
   margin: auto;
   margin-top: 50px;
 
+}
+
+.container-cardComponent {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  gap: 15px;
 }

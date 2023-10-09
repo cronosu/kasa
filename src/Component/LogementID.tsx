@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import logements from '../../public/logements.json';
 import { useLocation } from 'react-router-dom';
 import fleche from "/src/assets/Vector.png";
-import flecheUp from "/src/assets/VectorUp.png";
-import Etoiles from  './utils/Etoiles';
-
+import Etoiles from './utils/Etoiles';
+import CardComponent from './CardComponent';
 
 
 function LogementID() {
@@ -43,7 +42,7 @@ function LogementID() {
       setindexCarouselle(indexCarouselle = 0)
     }
   }
- 
+
 
 
   return (
@@ -86,12 +85,22 @@ function LogementID() {
       </ul>
 
       <div className='container-descrition-equipements'>
-        <div className='descrition'>Description
-          <img className='fleche-up' src={flecheUp} ></img>
-        </div>
-        <div className='equipements'>Équipements
-          <img className='fleche-up' src={flecheUp} ></img>
-        </div>
+        <CardComponent
+          style={18}
+          titre="Description"
+          content={donnees[indexOfLogement].description}
+        />
+        <CardComponent
+          style="18"
+          titre="Équipements"
+          content={
+            donnees[indexOfLogement].equipments
+              .map((e, index) => (
+                <li className='tag' key={index}>{e}</li>
+              ))}
+        />
+
+
       </div>
     </>
   );

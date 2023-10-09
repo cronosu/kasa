@@ -1,5 +1,5 @@
 .carrouselle {
-    margin-top: 50px;
+
     position: relative;
     display: flex;
     height: 415px;
@@ -105,44 +105,7 @@
 
 }
 
-.container-descrition-equipements {
 
-    color: white;
-    display: flex;
-    gap: 76px;
-    margin: 10px 0;
-    margin-top: 20px;
-    justify-content: space-around;
-    font-family: Montserrat;
-    font-size: 18px;
-    line-height: 26px;
-
-
-    .descrition {
-        position: relative;
-        border-radius: 10px;
-        padding: 15px 10px;
-        background-color: #FF6060;
-
-        width: 100%
-    }
-
-    .equipements {
-        position: relative;
-        border-radius: 10px;
-        padding: 15px 10px;
-        background-color: #FF6060;
-        width: 100%
-    }
-
-
-}
-
-.fleche-up {
-    position: absolute;
-    right: 20px;
-    top: 40%;
-}
 
 .container-info {
     position: relative;
@@ -200,3 +163,16 @@
     opacity: 0.3;
 
 }
+
+.container-descrition-equipements {
+    color: white;
+    display: flex;
+    gap: 76px;
+    margin: 10px 0;
+    margin-top: 20px;
+  align-items: start;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 26px;
+}
+

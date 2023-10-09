@@ -1,0 +1,44 @@
+.contentainer-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    font-family: Montserrat;
+
+    .card-titre {
+        position: relative;
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-color: #FF6060;
+        width: 100%;
+        top: 0;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+
+    .toggle {
+        p {
+            background-color: rgba(128, 128, 128, 0.13);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            transition:
+                opacity 0.2s ease-in,
+                height 0.2s ease-in-out;
+            margin: 0;
+
+        }
+        color: #FF6060;
+    }
+
+    .fleche-up {
+        transition:transform 0.3s ease-in-out;
+        position: absolute;
+        right: 20px;
+        top: 40%;
+    }
+}

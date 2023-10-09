@@ -12,7 +12,7 @@ function Header() {
         <img className="logo" src={Logo} alt="Logo" />
         <div className='nav-link'>
           <Link className='nav-link-btn' to="/">Accueil</Link> 
-          <Link className='nav-link-btn'  to="/">A Propos</Link>
+          <Link className='nav-link-btn'  to="/apropos">A Propos</Link>
         </div>
       </nav>
     </>

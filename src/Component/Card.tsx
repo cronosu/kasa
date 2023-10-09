@@ -2,7 +2,9 @@
 import './Card.scss'
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import  logements  from '../../public/logements.json';
+import logements from '../../public/logements.json';
+
+
 function Card() {
   const [donnees, setDonnees] = useState<any[]>([]);
 
@@ -11,13 +13,14 @@ function Card() {
   }, []);
 
 
+
   return (
     <div>
       {donnees.length > 0 ? (
         <div className='container-card'
         >
           {donnees.map(logement => (
-            <Link to={logement.id} className='cards'
+           <Link to={logement.id} className='cards'
               key={logement.id + logement.title}
             >
               <img alt={logement.title} src={logement.cover} className='card' />
