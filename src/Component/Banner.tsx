@@ -3,8 +3,8 @@ import './Banner.scss'
 import fond2 from '../assets/fond2.png'
 import fond1 from '../assets/fond1.png'
 type CardComponentProps = {
-  backgroundImage?: string;
-  content?: "fond1"
+  backgroundImage?: "fond1";
+  content?: string;
 };
 
 
