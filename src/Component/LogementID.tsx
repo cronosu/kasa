@@ -91,7 +91,7 @@ function LogementID() {
           content={donnees[indexOfLogement].description}
         />
         <CardComponent
-          style="18"
+          style={18}
           titre="Équipements"
           content={
             donnees[indexOfLogement].equipments
