@@ -1,7 +1,7 @@
 
 import './Banner.scss'
-import fond2 from '../assets/fond2.png'
-import fond1 from '../assets/fond1.png'
+import fond2 from '../assets/fond2.jpg'
+import fond1 from '../assets/fond1.jpeg'
 type CardComponentProps = {
   backgroundImage?: "fond1";
   content?: string;
