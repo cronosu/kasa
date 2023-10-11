@@ -39,13 +39,11 @@ function CardComponent(props: CardComponentProps) {
 
         className="toggle">
         <p
-     
           ref={contentRef}
           style={open ? {
             height: contentRef.current ? contentRef.current.scrollHeight + "px" : "auto",
             opacity: 1,
             fontSize: props.style + "px" 
-
           } : {
             height: "0px",
             opacity: 0,

@@ -9,7 +9,7 @@ import {
 
 import Header from './Component/Header'
 import Banner from './Component/Banner'
-import Card from './Component/Card'
+import Card from './Component/Cards'
 import Footer from './Component/Footer'
 import PageID from './Component/Page-id'
 import Error404 from './Component/Error404'
@@ -76,14 +76,16 @@ const router = createBrowserRouter(
                 perturbation du voisinage entraînera une exclusion de notre plateforme." />
               <CardComponent
                 titre="Service"
-                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
-                perturbation du voisinage entraînera une exclusion de notre plateforme." />
+                content="Chez Kasa, nous nous engageons à fournir un service exceptionnel à nos clients. Notre équipe dévouée 
+                est disponible 24/7 pour répondre à vos besoins et vous offrir une expérience de location de qualité. Nous sommes 
+                là pour vous aider à trouver le logement parfait pour votre séjour et pour vous assurer un séjour agréable et sans souci."
+              />
               <CardComponent
                 titre="Sécurité"
-                content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement
-                correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au
-                locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons
-                également des ateliers sur la sécurité domestique pour nos hôtes." />
+                content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logements 
+                correspond aux critère établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela 
+                permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur
+                la sécurité domestique pour nos hôtes." />
             </div>
           </main>
           <Footer />

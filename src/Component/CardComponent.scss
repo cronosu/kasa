@@ -17,6 +17,7 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 34px;
+        user-select: none;
     }
 
     .toggle {
@@ -40,5 +41,6 @@
         position: absolute;
         right: 20px;
         top: 40%;
+        cursor: pointer;
     }
 }

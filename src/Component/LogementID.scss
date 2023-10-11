@@ -63,6 +63,7 @@
     padding: 0;
     display: flex;
     gap: 15px;
+    user-select: none;
 
     .tag {
         list-style: none;
@@ -125,6 +126,7 @@
     justify-content: end;
     gap: 5px;
     user-select: none;
+
     .host-name {
         width: 50%;
         display: flex;
@@ -135,7 +137,7 @@
         font-weight: 500;
         text-align: right;
         align-self: center;
-        user-select:text;
+        user-select: text;
         line-height: 1.4;
     }
 
@@ -159,7 +161,7 @@
 }
 
 .etoileInative {
-    filter:contrast(0);
+    filter: contrast(0);
     opacity: 0.3;
 
 }
@@ -170,9 +172,8 @@
     gap: 76px;
     margin: 10px 0;
     margin-top: 20px;
-  align-items: start;
+    align-items: start;
     font-family: Montserrat;
     font-size: 18px;
     line-height: 26px;
 }
-

@@ -1,8 +1,9 @@
 
-import './Card.scss'
+import './Cards.scss'
 import { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
+
 import logements from '../../public/logements.json';
+import CardId from "./CardId"
 
 
 function Card() {
@@ -16,17 +17,21 @@ function Card() {
 
   return (
     <div>
+      {/*console.log(donnees)*/}
       {donnees.length > 0 ? (
         <div className='container-card'
         >
-          {donnees.map(logement => (
-           <Link to={logement.id} className='cards'
+          {donnees.map(logement=> (
+            <CardId
+              to={logement.id}
               key={logement.id + logement.title}
-            >
-              <img alt={logement.title} src={logement.cover} className='card' />
-              <h2 className='title'>{logement.title}</h2>
-            </Link>
+              alt={logement.title}
+              src={logement.cover}
+              title={logement.title}
+            />
           ))}
+
+
         </div>
       ) : (
         <p>Chargement en cours...</p>
