@@ -1,19 +1,12 @@
-
-import './Cards.scss'
 import { useEffect, useState } from 'react';
-
 import logements from '../../public/logements.json';
-import CardId from "./CardId"
-
-
-function Card() {
+import CardComponent from "../Component/CardComponent"
+function Cards() {
   const [donnees, setDonnees] = useState<any[]>([]);
 
   useEffect(() => {
     setDonnees(logements);
   }, []);
-
-
 
   return (
     <div>
@@ -21,8 +14,8 @@ function Card() {
       {donnees.length > 0 ? (
         <div className='container-card'
         >
-          {donnees.map(logement=> (
-            <CardId
+          {donnees.map(logement => (
+            <CardComponent
               to={logement.id}
               key={logement.id + logement.title}
               alt={logement.title}
@@ -30,8 +23,6 @@ function Card() {
               title={logement.title}
             />
           ))}
-
-
         </div>
       ) : (
         <p>Chargement en cours...</p>
@@ -39,5 +30,4 @@ function Card() {
     </div>
   );
 }
-
-export default Card
+export default Cards

@@ -6,6 +6,7 @@
     @media (max-width: 1190px) {
         width: 100%;
     }
+    
     -webkit-user-drag: none;
     position: relative;
     width: 340px;
@@ -49,7 +50,7 @@
         margin-right: 10px;
         bottom: 0;
         color: white;
-        font-family: Montserrat;
+        font-family: $main-font;
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;            

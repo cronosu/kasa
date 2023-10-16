@@ -1,18 +1,13 @@
-
-import './LogementID.scss'
 import { useEffect, useState } from 'react';
 import logements from '../../public/logements.json';
 import { useLocation } from 'react-router-dom';
-import fleche from "/src/assets/Vector.png";
-import Etoiles from './utils/Etoiles';
-import CardComponent from './CardComponent';
-
+import Etoiles from './Etoiles';
+import CardComponent from './Collapse';
 
 function LogementID() {
   const [donnees, setDonnees] = useState(logements);
   const [indexOfLogement, setIndexOfLogement] = useState(0);
   const [rating, setRating] = useState(0);
-  let [indexCarouselle, setindexCarouselle] = useState(0);
 
   const location = useLocation();
 
@@ -28,41 +23,8 @@ function LogementID() {
     setRating(NumberRating);
   }, [rating]);
 
-
-  function previous() {
-    setindexCarouselle(indexCarouselle - 1)
-    if (indexCarouselle == 0) {
-      setindexCarouselle(indexCarouselle = donnees[indexOfLogement].pictures.length - 1)
-    }
-  }
-
-  function next() {
-    setindexCarouselle(indexCarouselle + 1)
-    if (indexCarouselle + 1 >= donnees[indexOfLogement].pictures.length) {
-      setindexCarouselle(indexCarouselle = 0)
-    }
-  }
-
-
-
   return (
-    <>
-      <div className="carrouselle">{
-        donnees[indexOfLogement].pictures.length > 1 ? <img onClick={previous} className='fleche fleche-gauche' src={fleche} ></img>
-          : null
-      }
-        {
-          donnees[indexOfLogement].pictures.length > 1 ? <img onClick={next} className='fleche fleche-droite' src={fleche} ></img>
-            : null
-        }
-        <img className="carouselle-img" src={donnees[indexOfLogement].pictures[indexCarouselle]}></img>
-        {
-          donnees[indexOfLogement].pictures.length != 1 ? <p className='compteur'>{indexCarouselle + 1}/{donnees[indexOfLogement].pictures.length}</p>
-            : null
-        }
-
-
-      </div>
+    <div>
       <div className='container-info'>
         <div>
           <h1 className='logement-title'>{donnees[indexOfLogement].title}</h1>
@@ -99,10 +61,8 @@ function LogementID() {
                 <li className='tag' key={index}>{e}</li>
               ))}
         />
-
-
       </div>
-    </>
+    </div>
   );
 }
 

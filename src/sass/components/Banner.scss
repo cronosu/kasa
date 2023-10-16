@@ -6,9 +6,7 @@
 }
 
 .banner {
-
     height: 223px;
-    
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -36,7 +34,7 @@
 
     .banner-content {
         transition: transform 0.5s ease-in;
-        font-family: Montserrat;
+        font-family: $main-font;
         font-size: 48px;
         color: white;
         position: relative;

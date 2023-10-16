@@ -1,14 +1,13 @@
-import './Page-id.scss'
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import LogementID from "./LogementID.tsx"
 import Error404 from './Error404.tsx';
 import logements from '../../public/logements.json';
+import Carrouselle from './Carouselle.tsx';
 
 function PageID() {
   const [donnees, setDonnees] = useState<any[]>([]);
   let location = useLocation();
-
   const [showError, setShowError] = useState(false);
 
   useEffect(() => {
@@ -29,14 +28,14 @@ function PageID() {
 
 
   return (
-    <div>
-      {elementTrouve ? (
+    <>
+      {elementTrouve ? (<>
+        <Carrouselle/>
         <LogementID />
+        </>
       ) : null}
-
-
       {showError && <Error404 />}
-    </div>
+    </>
   );
 }
 

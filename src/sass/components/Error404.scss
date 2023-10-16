@@ -1,17 +1,18 @@
 .container-error {
-    font-family: Montserrat;
-    color: #FF6060;
+    font-family: $main-font;
+    color: $main-color;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-gap: 50px;
+    gap: 50px;
+
     .titre-error {
         user-select: none;
-        margin: 0 ;
+        margin: 0;
         margin-top: 50px;
-        font-size: 170px;
         font-size: 288px;
+
         @media (max-width: 730px) {
             font-size: 120px;
         }
@@ -26,7 +27,7 @@ gap: 50px;
     .titre-error-btn {
         user-select: none;
         margin: 50px 0;
-        color: #FF6060;
+        color: $main-color;
         text-decoration: underline;
     }
 }

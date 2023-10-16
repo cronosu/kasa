@@ -1,59 +1,19 @@
-import { useState, useRef } from 'react';
-import flecheUp from "/src/assets/VectorUp.png";
-import './CardComponent.scss'
+import { Link } from "react-router-dom"
 type CardComponentProps = {
-  titre?: string;
-  content?: string | JSX.Element[];
-  style?: number
+    to:string;
+    alt:string;
+    src:string;
+    title:string;
+  
 };
-
 function CardComponent(props: CardComponentProps) {
-  const [open, setOPen] = useState(false);
-  const toggle = () => {
-    setOPen(!open);
-  };
+    return (
+        <Link to={props.to} className='cards'>
+            <img alt={props.alt} src={props.src} className='card' />
+            <h2 className='title'>{props.title}</h2>
+        </Link>
 
-  const contentRef = useRef<HTMLParagraphElement | null>(null);
-
-
-
-
-  return (
-
-    <div className='contentainer-card'>
-
-      <div  
-          style={{ fontSize: props.style + "px" }}
-        className='card-titre'>{props.titre}
-        <img
-          className='fleche-up'
-          style={open ? {
-            transform: 'rotate(-180deg)'
-          } :
-            {}
-          }
-          onClick={toggle} src={flecheUp}>
-        </img>
-      </div>
-      <div
-
-        className="toggle">
-        <p
-          ref={contentRef}
-          style={open ? {
-            height: contentRef.current ? contentRef.current.scrollHeight + "px" : "auto",
-            opacity: 1,
-            fontSize: props.style + "px" 
-          } : {
-            height: "0px",
-            opacity: 0,
-            fontSize: props.style + "px" 
-          }} >{props.content}
-        </p>
-      </div>
-    </div>
-  );
-
+    );
 }
-
 export default CardComponent
+
