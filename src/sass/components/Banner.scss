@@ -3,10 +3,14 @@
     border-radius: 25px;
     background-color: aliceblue;
     user-select: none;
+    height: 223px;
+    @media (max-width: 750px) {
+        height: 111px;
+
+    }
 }
 
 .banner {
-    height: 223px;
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -14,13 +18,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    transition: transform 0.5s ease-out;
-    &:hover .banner-content {
-        transform: scale(0.9);
-      }
-    &:hover {
-        transform: scale(1.2);
-    }
+    height: 100%;
 
     &::before {
         content: "";
@@ -32,12 +30,22 @@
 
     }
 
+    @media (max-width: 750px) {
+        font-size: 35px;
+        justify-content: start;
+        height: 100%;
+    }
+
     .banner-content {
-        transition: transform 0.5s ease-in;
         font-family: $main-font;
         font-size: 48px;
         color: white;
         position: relative;
 
+        @media (max-width: 750px) {
+            padding: 0 20px;
+            width: 230px;
+            font-size: 24px;
+        }
     }
 }

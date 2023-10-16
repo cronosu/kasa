@@ -5,7 +5,8 @@ import Header from "../Component/Header";
 function Main() {
     return (
         <>
-            <Header />
+            <Header style={{ textDecoration: 'underline' }} />
+
             <Banner
                 content="Chez vous, partout et ailleurs"
             />

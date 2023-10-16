@@ -5,7 +5,12 @@
     width: 122px;
     filter: brightness(100);
   }
-
+p{
+  @media (max-width: 700px) {
+  width: 250px;
+text-align: center;
+    }
+}
   display: flex;
   position: absolute;
   align-items: center;
@@ -25,6 +30,6 @@
 
   @media (max-width: 880px) {
     height: 375px;
-    bottom: -375px;
+    bottom: -450px;
   }
 }

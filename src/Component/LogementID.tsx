@@ -29,6 +29,11 @@ function LogementID() {
         <div>
           <h1 className='logement-title'>{donnees[indexOfLogement].title}</h1>
           <h2 className='logement-location'>{donnees[indexOfLogement].location}</h2>
+          <ul className='list-tag'>
+        {donnees[indexOfLogement].tags.map((e, index) => (
+          <li className='tag' key={index}>{e}</li>
+        ))}
+      </ul>
         </div>
         <div className='container-host-rating'>
           <div className='container-host'>
@@ -40,11 +45,7 @@ function LogementID() {
           </div>
         </div>
       </div>
-      <ul className='list-tag'>
-        {donnees[indexOfLogement].tags.map((e, index) => (
-          <li className='tag' key={index}>{e}</li>
-        ))}
-      </ul>
+     
 
       <div className='container-descrition-equipements'>
         <CardComponent

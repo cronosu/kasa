@@ -4,6 +4,8 @@
     display: flex;
     gap: 15px;
     user-select: none;
+    display: flex;
+    flex-wrap: wrap;
 
     .tag {
         list-style: none;
@@ -23,7 +25,6 @@
 
 .logement-title {
     margin: 0;
-
     padding: 0;
     font-size: 36px;
     font-weight: 500;
@@ -43,12 +44,27 @@
     align-items: center;
     color: $main-color;
     font-family: $main-font;
+    gap: 10px;
+
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 .container-host-rating {
     position: absolute;
     right: 0;
     top: 0;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 
 .container-host {
@@ -77,11 +93,25 @@
     }
 }
 
-.rating div {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    user-select: none;
+.rating {
+    @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        user-select: none;
+
+        @media (max-width: 1200px) {
+            gap: 10%;
+
+        }
+    }
 }
 
 .etoile {
@@ -96,9 +126,14 @@
 .container-descrition-equipements {
     color: white;
     display: flex;
-    gap: 76px;
+    gap: 5%;
     margin: 10px 0;
     margin-top: 20px;
     align-items: start;
     line-height: 26px;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+  
+     }
 }

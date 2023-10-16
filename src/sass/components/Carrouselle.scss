@@ -2,21 +2,11 @@
     position: relative;
     display: flex;
     height: 415px;
-    width: 1240px;
-    caret-color: transparent;
+    width: 100%;
     overflow: hidden;
     border-radius: 25px;
 
-    &:hover+.carouselle-img {
-        transform: scale(1.3);
-    }
 
-    .carouselle-img {
-        border-radius: 25px;
-        user-select: none;
-        object-fit: cover;
-        width: 1240px;
-    }
 
     .fleche {
         z-index: 5;
@@ -24,9 +14,16 @@
         top: 40%;
         transition: transform 0.2s ease-in;
         cursor: pointer;
-
+        box-sizing: border-box;
+       
         &:hover {
             transform: scale(1.3);
+        }
+        @media (max-width: 1260px) {
+            transform: scale(50%);
+            &:hover {
+                transform: scale(0.7);
+            }
         }
     }
 
@@ -41,10 +38,15 @@
     }
 
     .carouselle-img {
+        box-sizing: border-box;
         border-radius: 25px;
         user-select: none;
         object-fit: cover;
-        width: 1240px;
+        border-radius: 25px;
+        width: 100%;      
+        @media (max-width: 600px) {
+           width: none;
+            } 
     }
 }
 

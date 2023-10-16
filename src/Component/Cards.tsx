@@ -10,7 +10,6 @@ function Cards() {
 
   return (
     <div>
-      {/*console.log(donnees)*/}
       {donnees.length > 0 ? (
         <div className='container-card'
         >

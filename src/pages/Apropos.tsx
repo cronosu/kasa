@@ -5,7 +5,7 @@ import Collapse from "../Component/Collapse";
 function Apropos() {
     return (
         <>
-            <Header />
+             <Header style2={{ textDecoration: 'underline' }} />
             <Banner
               backgroundImage="fond1"
             />

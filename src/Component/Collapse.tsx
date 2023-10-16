@@ -20,7 +20,7 @@ function CardComponent(props: CardComponentProps) {
 
   return (
 
-    <div className='contentainer-card'>
+    <div className='contentainer-card-apropos'>
 
       <div  
           style={{ fontSize: props.style + "px" }}
