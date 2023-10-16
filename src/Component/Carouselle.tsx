@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import logements from '../../public/logements.json';
+import logements from '../../src/logements.json';
 import { useLocation } from 'react-router-dom';
 import fleche from "/src/assets/Vector.png";
 
