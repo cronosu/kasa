@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logements from '../../public/logements.json';
+import logements from '../../src/logements.json';
 import { useLocation } from 'react-router-dom';
 import Etoiles from './Etoiles';
 import CardComponent from './Collapse';
@@ -24,7 +24,7 @@ function LogementID() {
   }, [rating]);
 
   return (
-    <div>
+    <div className='LogementID'>
       <div className='container-info'>
         <div>
           <h1 className='logement-title'>{donnees[indexOfLogement].title}</h1>

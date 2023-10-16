@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logements from '../../public/logements.json';
+import logements from '../../src/logements.json';
 import CardComponent from "../Component/CardComponent"
 function Cards() {
   const [donnees, setDonnees] = useState<any[]>([]);
