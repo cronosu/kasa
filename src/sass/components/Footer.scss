@@ -5,12 +5,14 @@
     width: 122px;
     filter: brightness(100);
   }
-p{
-  @media (max-width: 700px) {
-  width: 250px;
-text-align: center;
+
+  p {
+    @media (max-width: 700px) {
+      width: 250px;
+      text-align: center;
     }
-}
+  }
+
   display: flex;
   position: absolute;
   align-items: center;
@@ -28,8 +30,8 @@ text-align: center;
   bottom: -279px;
   width: 100%;
 
-  @media (max-width: 880px) {
+  @media (max-width: 850px) {
     height: 375px;
-    bottom: -450px;
+    bottom: -400px;
   }
 }

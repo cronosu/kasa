@@ -6,35 +6,47 @@
     overflow: hidden;
     border-radius: 25px;
 
+    @media (max-width: 700px) {
 
+        height: 255px;
+    }
 
     .fleche {
+        top: 45%;
         z-index: 5;
         position: absolute;
-        top: 40%;
         transition: transform 0.2s ease-in;
         cursor: pointer;
         box-sizing: border-box;
-       
+
         &:hover {
             transform: scale(1.3);
         }
-        @media (max-width: 1260px) {
-            transform: scale(50%);
+
+        @media (max-width: 700px) {
+            transform: scale(30%);
+            top: 35%;
+
             &:hover {
-                transform: scale(0.7);
+                transform: scale(0.5);
             }
         }
     }
 
     .fleche-gauche {
         margin-left: 20px;
+        @media (max-width: 700px) {
+            margin-left: 0px;
+        }
     }
 
     .fleche-droite {
-        top: 35%;
         right: 20px;
         rotate: 180deg;
+
+        @media (max-width: 700px) {
+            right: 0px;
+        }
     }
 
     .carouselle-img {
@@ -43,10 +55,13 @@
         user-select: none;
         object-fit: cover;
         border-radius: 25px;
-        width: 100%;      
-        @media (max-width: 600px) {
-           width: none;
-            } 
+        width: 100%;
+
+
+        @media (max-width: 700px) {
+            width: none;
+            height: 255px;
+        }
     }
 }
 

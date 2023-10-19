@@ -5,6 +5,7 @@
     color: white;
     justify-content: space-around;
     font-family: $main-font;
+
     .card-titre {
         position: relative;
         border-radius: 10px;
@@ -17,9 +18,38 @@
         font-weight: 500;
         line-height: 34px;
         user-select: none;
+        height: 50px;
+        display: flex;
+
+        p {
+            align-self: center;
+            font-family: $main-font;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            padding: 0;
+            margin: 0;
+
+            @media (max-width: 700px) {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            height: 30px;
+            font-family: $main-font;
+            font-size: 13px;
+            line-height: 19px;
+
+            height: 30px;
+            padding: 10px 0px 10px 10px;
+            border-radius: 5px;
+
+        }
     }
 
     .toggle {
+
         p {
             background-color: rgba(128, 128, 128, 0.13);
             border-radius: 10px;
@@ -30,16 +60,27 @@
                 opacity 0.2s ease-in,
                 height 0.2s ease-in-out;
             margin: 0;
+            list-style: none;
 
+            @media (max-width: 700px) {
+                font-size: 12px !important;
+                line-height: 17px;
+            }
         }
+
         color: $main-color;
     }
 
     .fleche-up {
-        transition:transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         position: absolute;
         right: 20px;
         top: 40%;
         cursor: pointer;
+
+        @media (max-width: 700px) {
+            width: 16px;
+            right: 10px;
+        }
     }
 }

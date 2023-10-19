@@ -24,7 +24,7 @@ function CardComponent(props: CardComponentProps) {
 
       <div  
           style={{ fontSize: props.style + "px" }}
-        className='card-titre'>{props.titre}
+        className='card-titre'><p>{props.titre}</p>
         <img
           className='fleche-up'
           style={open ? {

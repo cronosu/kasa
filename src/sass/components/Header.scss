@@ -18,12 +18,15 @@
       font-size: 24px;
       line-height: 34px;
 
-      @media (max-width: 760px) {
-        font-size: 17px;
+      @media (max-width: 700px) {
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: uppercase;
       }
 
       &:hover {
         text-decoration: underline;
+    
 
       }
     }
@@ -32,4 +35,7 @@
 
 .logo {
   caret-color: transparent;
+  @media (max-width: 1260px) {
+    height: 46.88px
+  }
 }
