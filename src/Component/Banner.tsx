@@ -1,16 +1,14 @@
-
-import fond2 from '../assets/fond2.jpg'
 import fond1 from '../assets/fond1.jpg'
+import fond2 from '../assets/fond2.jpg'
+
 type CardComponentProps = {
   backgroundImage?: "fond1";
   content?: string;
 };
 
-
 function Banner(props: CardComponentProps) {
   return (
-    <div className='container-banner'
-    >
+    <div className='container-banner'>
       <div
         style={
           props.backgroundImage
@@ -20,8 +18,7 @@ function Banner(props: CardComponentProps) {
 
         {props.content
         ? <p className='banner-content'>{props.content}</p>
-            : <p className='banner-content'>{props.content}</p>
- }
+            : null}
       </div>
     </div>
   );

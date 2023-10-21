@@ -16,12 +16,8 @@ function CardComponent(props: CardComponentProps) {
   const contentRef = useRef<HTMLParagraphElement | null>(null);
 
 
-
-
   return (
-
     <div className='contentainer-card-apropos'>
-
       <div  
           style={{ fontSize: props.style + "px" }}
         className='card-titre'><p>{props.titre}</p>
@@ -36,12 +32,11 @@ function CardComponent(props: CardComponentProps) {
         </img>
       </div>
       <div
-
         className="toggle">
         <p
           ref={contentRef}
           style={open ? {
-            height: contentRef.current ? contentRef.current.scrollHeight + "px" : "auto",
+            height: contentRef.current ? contentRef.current.scrollHeight + "px" : null,
             opacity: 1,
             fontSize: props.style + "px" 
           } : {

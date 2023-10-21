@@ -7,7 +7,7 @@
     display: flex;
     gap: 57px;
 
-    @media (max-width: 1260px) {
+    @media (max-width: 700px) {
       gap: 20px;
     }
 
@@ -35,7 +35,7 @@
 
 .logo {
   caret-color: transparent;
-  @media (max-width: 1260px) {
+  @media (max-width: 700px) {
     height: 46.88px
   }
 }

@@ -7,7 +7,6 @@ import {
   Route
 } from "react-router-dom";
 
-
 import Footer from '../Component/Footer'
 import Error from '../pages/Error'
 import Apropos from '../pages/Apropos';
@@ -17,7 +16,7 @@ import { useLocation } from "react-router-dom";
 import Main from '../pages/Main'
 import Logement from '../pages/Logement';
 
-export default function ScrollToTop() {
+function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -50,7 +49,7 @@ const router = createBrowserRouter(
         <>
           <ScrollToTop />
           <main>
-           <Apropos/>
+            <Apropos />
           </main>
           <Footer />
         </>
