@@ -18,8 +18,8 @@ function CardComponent(props: CardComponentProps) {
 
   return (
     <div className='contentainer-card-apropos'>
-      <div  
-          style={{ fontSize: props.style + "px" }}
+      <div
+        style={{ fontSize: props.style + "px" }}
         className='card-titre'><p>{props.titre}</p>
         <img
           className='fleche-up'
@@ -38,11 +38,11 @@ function CardComponent(props: CardComponentProps) {
           style={open ? {
             height: contentRef.current ? contentRef.current.scrollHeight + "px" : "auto",
             opacity: 1,
-            fontSize: props.style + "px" 
+            fontSize: props.style + "px"
           } : {
             height: "0px",
             opacity: 0,
-            fontSize: props.style + "px" 
+            fontSize: props.style + "px"
           }} >{props.content}
         </p>
       </div>

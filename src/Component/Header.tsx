@@ -11,15 +11,15 @@ function Header(props: HeaderProps) {
 
   return (
     <>
-      <nav className="nav">
+      <header className="nav">
         <Link to="/">
           <img className="logo" src={Logo} alt="Logo" />
         </Link>
-        <div className='nav-link'>
+        <nav className='nav-link'>
           <Link className='nav-link-btn' style={props.style} to="/">Accueil</Link>
           <Link className='nav-link-btn' style={props.style2} to="/apropos">A Propos</Link>
-        </div>
-      </nav>
+        </nav>
+      </header>
     </>
   )
 }

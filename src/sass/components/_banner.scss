@@ -4,6 +4,7 @@
     background-color: aliceblue;
     user-select: none;
     height: 223px;
+
     @media (max-width: 700px) {
         height: 111px;
 
@@ -41,7 +42,7 @@
         font-size: 48px;
         color: white;
         position: relative;
-
+        font-weight: 500;
         @media (max-width: 700px) {
             padding: 0 20px;
             width: 220px;

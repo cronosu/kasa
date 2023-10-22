@@ -17,7 +17,7 @@ function Banner(props: CardComponentProps) {
         } className='banner'>
 
         {props.content
-        ? <p className='banner-content'>{props.content}</p>
+        ? <h1 className='banner-content'>{props.content}</h1>
             : null}
       </div>
     </div>
